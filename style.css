@@ -1,0 +1,173 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.container {
+  min-height: 100vh;
+  background: #faeeee;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+}
+.container form {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 600px;
+  padding-top: 157px;
+}
+.container form .cardForm {
+  margin-top: 20px;
+}
+.error{
+  border: red solid 1px;
+}
+.error:focus{
+  outline: 1px solid red;
+}
+.container form .cardForm span {
+  display: block;
+  color: #999;
+  padding-bottom: 5px;
+}
+
+.container form .cardForm input,
+.container form .cardForm select {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+}
+#Number1,#Number2,#Number3,#Number4 {
+  width: 24%;
+}
+#Holder {
+  width: 100%;
+}
+.container form .flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.container form .flexbox select {
+  display: flex;
+  flex-direction: column;
+}
+.container form .flexbox select,
+.container form .flexbox input {
+  width: 100%;
+}
+.month{
+    display: flex;
+}
+.month select{
+    margin-left: 5px;
+}
+form .submit-btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background: linear-gradient(50deg, #4d2db7, #ec53b0);
+  padding: 10px;
+  cursor: pointer;
+  transition: 2s linear;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #fff;
+}
+form .submit-btn:hover {
+  background: #ec53b0;
+}
+.container .cardFace{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 500px;
+    margin-top: 20px;
+}
+.container .cardFace .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background: linear-gradient(25deg, #4d2db7, #ec53b0);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+
+}
+.container .cardFace .image{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+.container .cardFace .image img{
+  height: 50px;
+}
+.cardLogo{
+  width: 80px;
+  height: 80px;
+  background-image: url('./images/visa.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cardFace .front .number-box{
+  font-size: 30px;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  gap: 40px;
+}
+.cardFace .front .flex-card{
+  display: flex;
+}
+.cardFace .front .flex-card .card-box:nth-child(2){
+  margin-left: auto;
+}
+.cardFace .front .flex-card .card-box{
+  font-size: 15px;
+  color: #fff;
+}
+.cardFace .front .flex-card .card-box .flex-name{
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width:540px) {
+  .container .cardFace{
+     width: 370px;
+  }
+  .cardFace .front .number-box{
+    gap: 20px;
+  }
+}
+@media (max-width:375px) {
+  #Number1,#Number2,#Number3,#Number4 {
+  width: 23%;
+}
+} 
+@media (max-width:280px){
+  .container .cardFace{
+     width: 300px;
+  }
+  .cardFace .front .number-box{
+    gap: 10px;
+  }
+  .cardFace .front .flex-card .card-box .flex-name{
+  gap: 1px;
+}
+}

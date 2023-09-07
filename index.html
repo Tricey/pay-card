@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CARD PAYMENT</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cardFace">
+        <div class="front">
+          <div class="image">
+            <img src="images/chip.png" alt="chip" id="chip"/>
+            <div class="cardLogo"></div>
+          </div>
+          <div class="number-box">
+            <div class="box">####</div>
+            <div class="box-1">####</div>
+            <div class="box-2">####</div>
+            <div class="box-3">####</div>
+          </div>
+          <div class="flex-card">
+            <div class="card-box">
+              <span>card holder</span>
+              <div class="flex-name">
+                <div  class="card-box-name">first name</div>
+              <div class="card-box-name">surname</div>
+              <div class="card-box-name">last name</div>
+              </div>
+              
+            </div>
+            <div class="card-box">
+              <span>expires</span>
+              <div class="expire">
+                <span class="expire-mm">mm</span>
+                <span class="exp-year">yy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="" id="form">
+        <div class="cardForm">
+          <span>Card Number</span>
+          <input
+            type="text"
+            name=""
+            id="Number1"
+            class="card-number"
+            maxlength="4"
+            required
+          />
+          <input
+            type="text"
+            name=""
+            id="Number2"
+            class="card-number-1"
+             maxlength="4"
+            required
+            
+          />
+          <input
+            type="text"
+            name=""
+            id="Number3"
+            class="card-number-2"
+             maxlength="4"
+            required
+           
+          />
+          <input
+            type="text"
+            name=""
+            id="Number4"
+            class="card-number-3"
+            maxlength="4"
+            required
+          />
+        
+        </div>
+        <div class="cardForm">
+          <span>Card Holder</span>
+          <input
+            type="text"
+            name=""
+            id="Holder"
+            class="card-holder"
+            placeholder="First Name  Surname  Others"
+            required
+          />
+        </div>
+        <div class="flexbox">
+          <div class="cardForm">
+            <span>expiration date</span>
+            <div class="month">
+              <select name="month" id="expire" class="month-input" required>
+                <option value="month" selected disabled>month</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select name="year" id="expire" class="year-input" required>
+                <option value="year" selected disabled>year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+              </select>
+            </div>
+          </div>
+          <div class="cardForm">
+            <span>cvv</span>
+            <input
+              type="text"
+              maxlength="4"
+              minlength="3"
+              class="cvv"
+              required
+            />
+          </div>
+        </div>
+        <input type="submit" value="Submit" class="submit-btn">
+      </form>
+    </div>
+    <script src="new.js"></script>
+  </body>
+</html>
